@@ -20,7 +20,7 @@ body {
     padding-top: 80px;
 }
 
-/* Animated stars/specks background */
+
 @keyframes float {
     0%, 100% {
         transform: translateY(0px) translateX(0px);
@@ -46,7 +46,7 @@ body {
     }
 }
 
-/* Stars background */
+
 body::before {
     content: '';
     position: fixed;
@@ -78,9 +78,9 @@ main, header, footer {
     padding: 0 20px;
 }
 
-/* Header Styles */
+
 header {
-    background: transparent; /* allow background and snow to show through */
+    background: transparent; 
     backdrop-filter: none;
     padding: 60px 0;
     text-align: center;
@@ -90,7 +90,7 @@ header {
     box-shadow: none;
 }
 
-/* ensure content sits above the snow layer */
+
 header, main, footer {
     position: relative;
     z-index: 2;
@@ -116,7 +116,7 @@ header h1 {
     color: rgba(176,196,255,0.9);
 }
 
-/* Snow overlay (dynamic flakes created with JS) */
+
 .snow-container {
     position: fixed;
     top: 0;
@@ -125,7 +125,7 @@ header h1 {
     height: 100%;
     pointer-events: none;
     overflow: hidden;
-    z-index: 0; /* behind content (main/header/footer have z-index:1) */
+    z-index: 0; 
 }
 
 .snowflake {
@@ -147,7 +147,7 @@ header h1 {
     100% { transform: translateY(110vh) translateX(-20px); opacity: 0.85; }
 }
 
-/* Products Grid */
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -155,7 +155,7 @@ header h1 {
     margin-bottom: 80px;
 }
 
-/* Product Card */
+
 .product-card {
     background: linear-gradient(135deg, rgba(30, 40, 80, 0.8), rgba(20, 25, 50, 0.9));
     border-radius: 20px;
@@ -245,7 +245,7 @@ header h1 {
     text-shadow: 0 0 10px rgba(176, 196, 255, 0.3);
 }
 
-/* Product Link */
+
 .product-link {
     text-decoration: none;
     display: flex;
@@ -253,7 +253,7 @@ header h1 {
     height: 100%;
 }
 
-/* Top Banner */
+
 .top-banner {
     background: linear-gradient(135deg, rgba(30, 40, 80, 0.95), rgba(20, 25, 50, 0.95));
     backdrop-filter: blur(25px);
@@ -311,7 +311,7 @@ header h1 {
     margin: 0;
 }
 
-/* Learn More Banner Button */
+
 .btn-learn-more-banner {
     padding: 12px 45px;
     background: linear-gradient(135deg, rgba(15, 20, 40, 0.9), rgba(10, 14, 30, 0.95));
@@ -376,7 +376,7 @@ header h1 {
     transform: translateY(-2px) scale(0.98);
 }
 
-/* Footer */
+
 footer {
     background: rgba(15, 20, 40, 0.8);
     backdrop-filter: blur(20px);
@@ -389,7 +389,7 @@ footer {
     letter-spacing: 0.5px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
